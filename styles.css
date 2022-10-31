@@ -1,0 +1,123 @@
+*{
+    /* takes away the default styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    color: white;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 20px;
+}
+
+ /* centers the header and form */
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+     /* takes away the border from the input and button */
+    border: none;
+    /* focus that changes the color of the button to white istead of the default grey */
+    background: white;
+    padding: 10px;
+}
+
+form button {
+    color: pink;
+    background: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+
+form button:hover{ 
+    background: red;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;       /* Sets the alignment */
+    list-style: none;     /* Removes the bullet style from list */
+}
+
+.todo {              /* This is the new code created in JS file */
+    margin: 15px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    display: flex;    /* So the text and buttons align next to each other */
+    justify-content: space-between;
+    align-items: center;    /* Fixes sizing of the mark and delete button */
+    transition: all .5s ease; /* Ease the completed mark transition effect */
+}
+
+.todo li {
+    flex: 1;       /* Pushes li to the right */
+}
+    
+.trash-btn,
+.complete-btn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.complete-btn {
+    background: rgb(133, 219, 133);
+}
+
+.todo-item {
+    padding: 10px;   /* Fixes the item text being flush to the left */
+}
+
+/* We cant click on the trash and check images on the button anymore */
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+/* styling "completed" class created in js line 51  */
+.completed {
+    text-decoration: line-through;  /* scratch out the text in todoDiv*/ 
+    opacity: .5;
+}
+
+/* transition effect for removing the todoDiv  */
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    background-color: white;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+-----------  SELECT TAG HTML ----------------
+https://www.w3schools.com/tags/tag_select.asp
+The <select> element is used to create a drop-down list.
+
+The <select> element is most often used in a form, to collect user input.
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+
+The id attribute is needed to associate the drop-down list with a label.
+
+The <option> tags inside the <select> element define the available options in the drop-down list.
+
+Tip: Always add the <label> tag for best accessibility practices!
+
+
+-----------  SELECT TAG HTML ----------------
+https://www.w3schools.com/js/js_switch.asp
+Use the switch statement to select one of many code blocks to be executed.
+Syntax
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+add to github
+
